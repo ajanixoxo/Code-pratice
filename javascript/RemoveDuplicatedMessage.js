@@ -19,9 +19,9 @@ function normalizeMessages(messages) {
      return console.log("Invalid Data type")
     }
     messages.forEach(item => {
-        let id = item.id
+        let id = item.id 
         tracker.push(id)
-        if(id in tracker){
+        if(tracker.includes(id)){
            messages.pop(item)
         }
         
