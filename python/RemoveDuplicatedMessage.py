@@ -1,7 +1,7 @@
 input = [{"id":"1", "content":"Testing one"}, {"id":"2", "content":"Testing 2"}, {"id":"1", "content":"Testing one"}]     
 
 output = []
-tracker = []
+tracker = set()
 def removeDuplicatedMessage(arr):
     if type(arr) != list:
        return  print("Invalid data type")
@@ -10,7 +10,7 @@ def removeDuplicatedMessage(arr):
             pass
         else:
             output.append(message)
-            tracker.append(message["id"])
+            tracker.add(message["id"])
     arr = output    
     return arr
         
