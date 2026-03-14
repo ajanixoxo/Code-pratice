@@ -37,4 +37,27 @@ void main() {
   int? a;
   a=null;
   print(a);
+  operations();
+}
+
+
+void operations(){
+
+  int a = 3;
+  int b = 5;
+
+  print(a + b); // addition → 8
+  print(a - b); // subtraction → 2
+  print(a * b); // multiplication → 15
+  print(a / b); // division → 1.666...
+  print(a % b); // remainder → 2
+
+  // Addtion plus c
+  int c = addNumbers(3, 3);
+  print(a + c + b);
+
+}
+
+int addNumbers(int x, int y){
+    return x + y;
 }
