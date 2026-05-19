@@ -12,12 +12,14 @@ void main(){
   person1.name = "Adeoluwa";
   person1.age = 21;
   person1.sayHello();
+
+  main2();
 }
 
 // WITH Construct 
 class PersonConstruct {
-  String? name;
-  int? age;
+ String name;
+  int age;
 
   PersonConstruct(this.name, this.age);
   void sayHello(){
